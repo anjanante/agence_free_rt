@@ -1,2 +1,9 @@
 # agence_free_rt
-Un site pour un agence de freelance
+
+A website for a freelance agency
+
+## install app
+### `npm install` or yarn
+
+## Run app
+### `npm start` or `yarn start`
