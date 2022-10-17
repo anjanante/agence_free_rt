@@ -1,5 +1,3 @@
-function App() {
+export default function Index() {
   return <div className="App">Home</div>;
 }
-
-export default App;
