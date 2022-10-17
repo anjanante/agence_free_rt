@@ -1,13 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Home from "./pages/Home/index";
+import Home from "./pages/Home";
 import Survey from "./pages/Survey";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import Header from "./components/Header";
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <Header />
       <Route exact path="/">
         <Home />
       </Route>
