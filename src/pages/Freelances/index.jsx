@@ -1,22 +1,27 @@
-import DefaultPicture from '../../assets/profile.jpg'
+import profileMan from '../../assets/profile-man.webp'
+import profileWoMan from '../../assets/profile-woman.png'
 import Card from '../../components/Card'
  
 const freelanceProfiles = [
     {
         name: 'Nant Raj',
         jobTitle: 'Devops',
-        picture: DefaultPicture,
+        picture: profileMan,
     },
     {
         name: 'Anja Raj',
         jobTitle: 'frontend Developer',
-        picture: DefaultPicture,
+        picture: profileMan,
     },
     {
         name: 'Jeannie Andria',
         jobTitle: 'Fullstack Developer ',
-        picture: DefaultPicture,
+        picture: profileWoMan,
     },
+    {
+      name: 'Jacque Rox',
+      jobTitle: 'BackEnd Developer ',
+  },
 ]
 
 export default function Freelances() {
@@ -28,6 +33,7 @@ export default function Freelances() {
                   key={`${profile.name}-${index}`}
                   label={profile.jobTitle}
                   picture={profile.picture}
+                  title={profile.name}
               />
           ))}
       </div>
