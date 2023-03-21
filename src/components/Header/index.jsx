@@ -12,12 +12,19 @@ const StyledLink = styled(Link)`
         `color: white; border-radius: 30px; background-color: ${colors.primary};`}
 `
 
+const HeaderContainer = styled.div`
+    display: grid;
+    padding: 15px;
+`
+
 export default function Header() {
     return (
-        <nav>
-            <StyledLink to="/">Home</StyledLink>
-            <StyledLink to="/survey/1" $isFullLink>Survey</StyledLink>
-            <StyledLink to="/freelances">Freelances</StyledLink>
-        </nav>
+        <HeaderContainer>
+            <nav>
+                <StyledLink to="/">Home</StyledLink>
+                <StyledLink to="/freelances">Freelances</StyledLink>
+                <StyledLink to="/survey/1" $isFullLink>Do the Test</StyledLink>
+            </nav>
+        </HeaderContainer>
     )
 }
