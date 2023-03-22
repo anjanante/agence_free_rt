@@ -1,28 +1,22 @@
-import { useState } from "react";
-import styled from "styled-components";
+import styled from 'styled-components'
+import colors from '../../utils/style/colors'
+import { StyledLink } from '../../utils/style/Atoms'
+import HomeIllustration from '../../assets/home-illustration.svg'
 
 const HomeContainer = styled.div`
-  width: 100%;
+  margin: 30px;
+  background-color: ${colors.background};
+  padding: 60px 90px;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-`;
+  flex-direction: row;
+  max-width: 1200px;
+`
 
-const Ballom = styled.div`
-  height: 100px;
-  width: 100px;
-  display: flex;
-  border-radius: 50px;
-  background-color: #e20202;
-  transform: scale(${({ size }) => size});
-`;
 
 export default function Index() {
-  const [size, setSize] = useState(1);
   return (
     <HomeContainer>
-      <h1 onClick={() => setSize(size + 0.1)}> Home page </h1>
-      <Ballom size={size} />
+      
     </HomeContainer>
   );
 }

@@ -30,11 +30,13 @@ const CardsContainer = styled.div`
     gap: 24px;
     grid-template-rows: 350px 350px;
     grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+    margin: auto;
 `
 
 export default function Freelances() {
   return (
-      <div>
+      <div style={styles.main}>
           <h1>Freelances 👩‍💻👨‍💻👩‍💻</h1>
           <CardsContainer>
           {freelanceProfiles.map((profile, index) => (
@@ -48,4 +50,10 @@ export default function Freelances() {
           </CardsContainer>
       </div>
   )
+}
+
+const styles = {
+    main: {
+        textAlign: 'center',
+    }
 }
