@@ -14,7 +14,7 @@ const StyledLink = styled(Link)`
 `
 
 const HeaderContainer = styled.div`
-    padding: 0 15px 0 15px;
+    padding: 0 20px;
 `
 
 const LogoImage = styled.img`
